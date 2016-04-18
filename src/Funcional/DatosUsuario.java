@@ -10,17 +10,17 @@ public class DatosUsuario
 	}
 	
 	String Usuario1 = "";
-	String Contraseña1 = "";
+	String Contrasena1 = "";
 	
 	public int AutenticarUsuario()
 	{
 		Usuario1 = Autenticacion.CampoUsuario.getText();
-		Contraseña1 = Autenticacion.CampoContraseña.getText();
+		Contrasena1 = Autenticacion.CampoContrasena.getText();
 		
-		if (Usuario1.equals("Laura") && Contraseña1.equals("poli123"))
+		if (Usuario1.equals("Laura") && Contrasena1.equals("poli123"))
 		{
 			return 1;
-		} else if (Usuario1.equals("Visitante") && Contraseña1.equals("poli123")) {
+		} else if (Usuario1.equals("Visitante") && Contrasena1.equals("poli123")) {
 			return 1;
 		} else {
 			return 0;

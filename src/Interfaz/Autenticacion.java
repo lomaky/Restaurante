@@ -21,7 +21,7 @@ public class Autenticacion extends JFrame {
 
 	private JPanel contentPane;
 	public static JTextField CampoUsuario;
-	public static JPasswordField CampoContraseña;
+	public static JPasswordField CampoContrasena;
 
 	/**
 	 * Create the frame.
@@ -69,20 +69,20 @@ public class Autenticacion extends JFrame {
 		contentPane.add(CampoUsuario);
 		CampoUsuario.setColumns(10);
 		
-		CampoContraseña = new JPasswordField();
-		CampoContraseña.setForeground(new Color(204, 0, 0));
-		CampoContraseña.setFont(new Font("Lucida Grande", Font.PLAIN, 18));
-		CampoContraseña.setBounds(168, 117, 130, 26);
-		contentPane.add(CampoContraseña);
+		CampoContrasena = new JPasswordField();
+		CampoContrasena.setForeground(new Color(204, 0, 0));
+		CampoContrasena.setFont(new Font("Lucida Grande", Font.PLAIN, 18));
+		CampoContrasena.setBounds(168, 117, 130, 26);
+		contentPane.add(CampoContrasena);
 		
 		final DatosUsuario Datos = new DatosUsuario();
-		final EscogerAccion EscogerAcción = new EscogerAccion();
+		final EscogerAccion EscogerAccion = new EscogerAccion();
 		
 		JButton BotonIngresar = new JButton("Ingresar");
 		BotonIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (Datos.AutenticarUsuario() == 1) {
-					EscogerAcción.setVisible(true);
+					EscogerAccion.setVisible(true);
 					dispose();
 				} else {
 					JOptionPane.showMessageDialog(null, "Error, usuario o contraseña inválidos.");

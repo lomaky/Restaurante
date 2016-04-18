@@ -80,7 +80,7 @@ public class RegistroDePago extends JFrame {
 		
 		final ItemsRegistrados ItemsRegistrados = new ItemsRegistrados();
 		final ItemsVendidos ItemsVendidos = new ItemsVendidos();
-		final RegistroDeAlmuerzo RegistroDeAlmuerzo = new RegistroDeAlmuerzo();
+		//final RegistroDeAlmuerzo RegistroDeAlmuerzo = new RegistroDeAlmuerzo();
 		
 		JButton BotonRecibido = new JButton("Recibido");
 		BotonRecibido.addActionListener(new ActionListener() {
@@ -89,7 +89,7 @@ public class RegistroDePago extends JFrame {
 				ItemsVendidos.Vendido(ItemsRegistrados.RegistroAlmuerzo());
 				ItemsRegistrados.LimpiarRegistro();
 				dispose();
-				RegistroDeAlmuerzo.setVisible(false);
+				//RegistroDeAlmuerzo.setVisible(false);
 			}
 		});
 		BotonRecibido.setForeground(new Color(255, 102, 0));
